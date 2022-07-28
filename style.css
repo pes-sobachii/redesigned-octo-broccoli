@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://lpnu.ua/sites/default/files/2022/3/1/news/18863/lp-viy-t.jpg");
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #341a00;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day,.hour,.min,.sec{
+    font-size: 3rem;
+}
+
+.countdown{
+    background-color: rgba(245, 187, 39, 0.55);
+    border-radius: 10px;
+    min-width: 60px;
+    color: #341a00;
+}
+
+.pic{
+    max-height: 300px;
+ }
+
