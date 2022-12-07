@@ -5,7 +5,7 @@ const finishPage = document.querySelector('.finish-page')
 const finishResult = document.querySelector('.finish-result')
 const remainingTime = document.querySelector('.remaining-time')
 
-const photoPaths = ['levicka_v_chervonomu.jpg', 'іля.jpg', 'Без названия (1).jpg', 'photo_2022-08-09_12-54-10.jpg', 'photo_2022-08-09_18-36-30.jpg', 'phot1.jpg', 'levicka_v_chervonomu.jpg', 'іля.jpg', 'Без названия (1).jpg', 'photo_2022-08-09_12-54-10.jpg', 'photo_2022-08-09_18-36-30.jpg', 'phot1.jpg']
+const photoPaths = ['levicka_v_chervonomu.jpg', 'photo_2022-12-07_13-04-37.jpg', 'Без названия (1).jpg', 'photo_2022-08-09_12-54-10.jpg', 'photo_2022-08-09_18-36-30.jpg', 'phot1.jpg', 'levicka_v_chervonomu.jpg', 'photo_2022-12-07_13-04-37.jpg', 'Без названия (1).jpg', 'photo_2022-08-09_12-54-10.jpg', 'photo_2022-08-09_18-36-30.jpg', 'phot1.jpg']
 let chosenTileImg = null
 let matchesCounter = 0
 let time = 0
