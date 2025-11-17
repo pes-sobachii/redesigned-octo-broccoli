@@ -57,14 +57,21 @@ const tileClickHandler = (e) => {
 
 const startButtonHandler = (e) => {
   startPage.style.display = "none";
-  tilesCards.forEach((elem) => {
-    const randomPhotoIndex = Math.floor(Math.random() * photoPaths.length);
-    const randomPhoto = photoPaths.splice(randomPhotoIndex, 1);
+
+  // Create pairs of images (each image appears twice)
+  const pairedPhotos = [...photoPaths, ...photoPaths];
+
+  // Shuffle the array randomly
+  const shuffledPhotos = pairedPhotos.sort(() => Math.random() - 0.5);
+
+  // Assign shuffled photos to tiles
+  tilesCards.forEach((elem, index) => {
     const tileBackImage = elem.querySelector(".tile img");
-    tileBackImage.setAttribute("src", randomPhoto[0]);
+    tileBackImage.setAttribute("src", shuffledPhotos[index]);
     elem.addEventListener("click", tileClickHandler);
     elem.classList.add("active");
   });
+
   const remainingTimeCounter = setInterval(() => {
     time += 1;
     remainingTime.textContent = `Your Time: ${time}`;
